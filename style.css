@@ -1,0 +1,107 @@
+body {
+    width: 100%;
+    height: auto;
+    background-color: #4f4f4f !important;
+}
+
+section {
+    display: flexbox;
+    width: 110%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fddafe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container1 {
+    padding-top: 20px;
+}
+
+.form-control {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #000000;
+    animation: animateSpin 2s linear infinite;
+}
+
+.form-control:hover, .form-control:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    border-color: #000000;
+}
+
+@keyframes animateSpin {
+    10% { border-color: #ffdb3b; }
+    45% { border-color: #fe53bb; }
+    67% { border-color: #8f51ea; }
+    87% { border-color: #0010f3; }
+}
+
+.btn {
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    color: #fff;
+    background-color: rgb(96, 8, 8);
+    border-color: #000000;
+}
+
+table {
+    position: relative;
+    /* border-collapse: collapse; */
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+th, td {
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+th {
+    vertical-align: center;
+    padding: 5px;
+    padding-top: 20px;
+    text-align-last: center;
+    background-color: #6cceff;
+    font-weight: bold;
+}
+
+.alert {
+    position: fixed; /* Atau 'absolute' jika ingin relative terhadap elemen parent */
+    bottom: 10px; /* Jarak dari bagian bawah halaman */
+    left: 50%; /* Menempatkan di tengah secara horizontal */
+    transform: translateX(-50%); /* Menyelaraskan elemen ke tengah horizontal */
+    display: none; /* Sembunyikan pesan secara default */
+    z-index: 9999; /* Agar berada di atas elemen lainnya */
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff; /* Warna latar belakang biru */
+}
+
+.alert-danger {
+    background-color: #dc3545; /* Warna latar belakang merah untuk pesan kesalahan */
+}
